@@ -43,11 +43,9 @@ class Life:
 
             self.week_list.append(new_week)
 
-
     def fill_weeks(self):
 
         for week in range(self.age):
-            print("test")
             self.week_list[week].fillcolor("black")
 
-        self.week_list[self.age].fillcolor("red")
+        self.week_list[self.age-1].fillcolor("red")
